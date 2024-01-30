@@ -1,4 +1,4 @@
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
 COPY [".docker/requirements.txt", "requirements.txt"]
 RUN pip install --no-cache -r requirements.txt
