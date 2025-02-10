@@ -4,8 +4,8 @@ import os
 
 class SMB(C2Profile):
     name = "smb"
-    description = "Communication over SMB named pipes."
-    author = "@djhohnstein"
+    description = "Communication over SMB named pipes with a specific packet structure.\nCheck out the docs for more information."
+    author = "@djhohnstein, @its_a_feature_"
     is_p2p = True
     is_server_routed = True
     server_binary_path = Path(os.path.join(".", "smb", "c2_code"))
@@ -13,7 +13,7 @@ class SMB(C2Profile):
     parameters = [
         C2ProfileParameter(
             name="pipename",
-            description="Named Pipe",
+            description="Named Pipe to create",
             format_string="[a-z0-9]{8}\-[a-z0-9]{4}\-[a-z0-9]{4}\-[a-z0-9]{4}\-[a-z0-9]{12}",
             randomize=True,
             required=False,
@@ -28,9 +28,9 @@ class SMB(C2Profile):
         C2ProfileParameter(
             name="encrypted_exchange_check",
             description="Perform Key Exchange",
-            choices=["T", "F"],
+            default_value=True,
             required=False,
-            parameter_type=ParameterType.ChooseOne,
+            parameter_type=ParameterType.Boolean,
         ),
         C2ProfileParameter(
             name="AESPSK",
