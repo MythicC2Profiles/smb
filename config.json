@@ -5,6 +5,6 @@
   "exclude_documentation_c2": false,
   "exclude_agent_icons": false,
   "remote_images": {
-    "smb": "ghcr.io/mythicc2profiles/smb:v0.0.8"
+    "smb": "ghcr.io/mythicc2profiles/smb:v0.1.0"
   }
 }
