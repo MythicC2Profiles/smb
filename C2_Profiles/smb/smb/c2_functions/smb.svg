@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large folder icon -->
+  <g transform="translate(20, 30)">
+    <!-- Folder back -->
+    <path d="M 0 30 L 0 140 L 160 140 L 160 30 L 95 30 L 80 15 L 0 15 Z" fill="#F4D03F" stroke="#D4A029" stroke-width="6" stroke-linejoin="round"/>
+    
+    <!-- Folder tab -->
+    <path d="M 0 15 L 80 15 L 95 30 L 0 30 Z" fill="#E8C34A" stroke="#D4A029" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Network indicator - two backslashes \\ prominently displayed -->
+  <g transform="translate(70, 95)">
+    <!-- Large backslashes -->
+    <text x="30" y="30" font-family="monospace" font-size="48" font-weight="bold" fill="black" text-anchor="middle">\\</text>
+  </g>
+</svg>

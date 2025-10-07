@@ -8,6 +8,8 @@ class SMB(C2Profile):
     author = "@djhohnstein, @its_a_feature_"
     is_p2p = True
     is_server_routed = True
+    semver = "0.1.0"
+    agent_icon_path = Path(".") / "smb" / "c2_functions" / "smb.svg"
     server_binary_path = Path(os.path.join(".", "smb", "c2_code"))
     server_folder_path = Path(os.path.join(".", "smb", "c2_code"))
     parameters = [
